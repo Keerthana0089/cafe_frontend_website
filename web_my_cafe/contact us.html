@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body background="C:\Users\keert\Pictures\Screenshots\Screenshot 2024-03-02 170021.png" style="color: white;">
+
+    <header>
+        <h1>My Cafe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact us.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="contact us">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <h4 style="text-align: center;">Feel free to reach out to us through the contact form below.</h4>
+            <pre>
+                <form id="contactForm" onsubmit="submitForm(event)">
+                    <label for="name">Name:</label>
+                    <textarea type="text" id="name" name="name" rows="2" required></textarea>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <textarea type="email" id="email" name="email" rows="2" required></textarea>
+                    <br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </pre>
+        </section>
+    </main>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            var nameInput = document.getElementById("name");
+            var emailInput = document.getElementById("email");
+            var messageInput = document.getElementById("message");
+            var name = nameInput.value;
+            var email = emailInput.value;
+            var message = messageInput.value;
+            alert("Thank you for your contacting us.We contact you back as soon as possible..!");
+            nameInput.value = "";
+            emailInput.value = "";
+            messageInput.value = "";
+        }
+    </script>
+
+    <footer>
+        &copy; 2024 My Web Application. All rights reserved.
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

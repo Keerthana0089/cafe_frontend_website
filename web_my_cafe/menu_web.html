@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/keert/Desktop/xkcb/menu.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <link rel="stylesheet" href="./menu_web_files/styles.css">
+</head>
+
+<body background="./menu_web_files/menu.png" style="color: white;">
+
+    <header>
+        <h1>My Cafe</h1>
+        <nav>
+            <a href="file:///C:/Users/keert/Desktop/xkcb/index.html">Home</a>
+            <a href="file:///C:/Users/keert/Desktop/xkcb/menu.html">Menu</a>
+            <a href="file:///C:/Users/keert/Desktop/xkcb/about.html">About</a>
+            <a href="file:///C:/Users/keert/Desktop/xkcb/contact%20us.html">Contact</a>
+        </nav>
+    </header>
+
+    <div id="menu-container">
+        <h1>Coffee:</h1>
+        <h3>
+            <nav>
+                <hr style="line-height-step: 10;">
+                <div class="menu-item" onclick="showItemDetails(&#39;Expresso&#39;, &#39;$5.00&#39;)">Expresso</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Double Expresso&#39;, &#39;$5.00&#39;)">Double Expresso</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Latte&#39;, &#39;$5.00&#39;)">Latte</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Americano&#39;, &#39;$7.00&#39;)">Americano</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Macchiato&#39;, &#39;$8.00&#39;)">Macchiato</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Flat White&#39;, &#39;$9.00&#39;)">Flat White</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Cappuccino&#39;, &#39;$10.00&#39;)">Cappuccino</div>
+                <p></p>
+                <hr>
+
+            </nav>
+        </h3>
+    </div>
+
+    <div id="menu-container">
+        <h1> Non-Coffee:</h1>
+        <h3>
+            <nav>
+                <hr>
+                <div class="menu-item" onclick="showItemDetails(&#39;Hot Chocolate&#39;, &#39;$5.00&#39;)">Hot Chocolate</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Milkshake&#39;, &#39;$5.00&#39;)">Milkshake</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Smoothie&#39;, &#39;$5.00&#39;)">Smoothie</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Lemonade&#39;, &#39;$7.00&#39;)">Lemonade</div>
+                <div class="menu-item" onclick="showItemDetails(&#39;Vanilla Milkshake&#39;, &#39;$8.00&#39;)">Vanilla Milkshake</div>
+
+                <hr>
+            </nav>
+
+
+        </h3>
+    </div>
+
+    <div id="item-details">
+        <h1>Item Details</h1>
+        <nav>
+            <h3 id="item-name">Selected Item: Flat White</h3>
+            <h1 id="item-price">Price: $9.00</h1>
+        </nav>
+    </div>
+
+    <script>
+        function showItemDetails(name, price) {
+            document.getElementById('item-name').textContent = `Selected Item: ${name}`;
+            document.getElementById('item-price').textContent = `Price: ${price}`;
+        }
+    </script>
+
+
+</body></html>

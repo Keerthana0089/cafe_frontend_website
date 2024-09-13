@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/keert/Desktop/xkcb/contact%20us.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./contact_web_files/styles.css">
+</head>
+
+<body background="./contact_web_files/Screenshot 2024-03-02 170021.png" style="color: white;">
+
+    <header>
+        <h1>My Cafe</h1>
+        <nav>
+            <a href="file:///C:/Users/keert/Desktop/xkcb/index.html">Home</a>
+            <a href="file:///C:/Users/keert/Desktop/xkcb/menu.html">Menu</a>
+            <a href="file:///C:/Users/keert/Desktop/xkcb/about.html">About</a>
+            <a href="file:///C:/Users/keert/Desktop/xkcb/contact%20us.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="contact us">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <h4 style="text-align: center;">Feel free to reach out to us through the contact form below.</h4>
+            <pre>                <form id="contactForm" onsubmit="submitForm(event)">
+                    <label for="name">Name:</label>
+                    <textarea type="text" id="name" name="name" rows="2" required="" style="width: 262px; height: 41px;"></textarea>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <textarea type="email" id="email" name="email" rows="2" required="" style="width: 270px; height: 51px;"></textarea>
+                    <br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required="" style="width: 275px; height: 68px;"></textarea>
+                    <br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </pre>
+        </section>
+    </main>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            var nameInput = document.getElementById("name");
+            var emailInput = document.getElementById("email");
+            var messageInput = document.getElementById("message");
+            var name = nameInput.value;
+            var email = emailInput.value;
+            var message = messageInput.value;
+            alert("Thank you for your contacting us.We contact you back as soon as possible..!");
+            nameInput.value = "";
+            emailInput.value = "";
+            messageInput.value = "";
+        }
+    </script>
+
+    <footer>
+        © 2024 My Web Application. All rights reserved.
+    </footer>
+
+    <script type="module" src="./contact_web_files/script.js.download"></script>
+
+
+</body></html>
